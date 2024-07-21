@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        style="@style/Widget.MaterialComponents.Toolbar.Primary"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        app:navigationIcon="@drawable/ic_arrow_back_24"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:titleTextColor="@color/white"
+        tools:title="Zhinan Temple" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/spacing_large">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvImages"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:scrollbars="horizontal"
+                tools:listitem="@layout/list_item_attraction_image" />
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/spacing_medium"
+                android:layout_marginTop="@dimen/spacing_small"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:text="Zhinan Temple" />
+
+            <TextView
+                android:id="@+id/tvIntroduction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/spacing_medium"
+                android:layout_marginTop="@dimen/spacing_medium"
+                android:justificationMode="inter_word"
+                tools:text="Zhinan Temple is located at the foot of Zhishan Mountain in Taipei&#39;s Wenshan District. Built in 1890, the temple is dedicated to the Daoist immortal Lu Tung-pin, better known as &quot;Xiangong&quot; or &quot;Luzu.&quot; A scholar of the Tang period, Lu loved poetry and books. He successfully passed the provincial level imperial examination and became a county magistrate. Because of his pious devotion to the Dao, Lu&#39;s path crossed with that of the Daoist immortal Zhong Liquan, who showed him the way to enlightenment. Many mysterious and noble deeds were attributed to Lu, making him one of the best known and most-loved of the Daoist immortals in Taiwan." />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/spacing_medium"
+                android:layout_marginTop="@dimen/spacing_medium"
+                android:text="@string/address" />
+
+            <TextView
+                android:id="@+id/tvAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/spacing_medium"
+                tools:text="No. 115, Wanshou St.,Wenshan Dist.,Taipei City 116" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/spacing_medium"
+                android:layout_marginTop="@dimen/spacing_small"
+                android:text="@string/last_updated_time" />
+
+            <TextView
+                android:id="@+id/tvLastUpdatedTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/spacing_medium"
+                tools:text="2024-07-15 15:20:15 +08:00" />
+
+
+            <TextView
+                android:id="@+id/tvUrl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/spacing_medium"
+                android:layout_marginTop="@dimen/spacing_medium"
+                android:autoLink="web"
+                android:linksClickable="false"
+                tools:text="https://www.travel.taipei/en/attraction/details/483" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

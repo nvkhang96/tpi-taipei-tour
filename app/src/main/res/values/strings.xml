@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">TaipeiTour</string>
+    <string name="change_language">Change language</string>
+    <string name="address">Address</string>
+    <string name="last_updated_time">Last Updated Time</string>
+    <string-array name="languages_array">
+        <item>繁體中文</item>
+        <item>简体中文</item>
+        <item>English</item>
+        <item>日本語</item>
+        <item>한국인</item>
+        <item>Español</item>
+        <item>भारतीय भाषा</item>
+        <item>แบบไทย</item>
+        <item>Tiếng Việt</item>
+    </string-array>
+    <string name="attraction_list_title">TaipeiTour</string>
+    <string name="invalid_url">Invalid URL</string>
+</resources>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TaipeiTour</string>
+    <string name="change_language">Cambiar idioma</string>
+    <string name="address">DIRECCIÓN</string>
+    <string name="last_updated_time">Hora de la última actualización</string>
+    <string name="attraction_list_title">Tour de Taipéi</string>
+</resources>

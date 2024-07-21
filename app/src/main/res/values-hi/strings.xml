@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TaipeiTour</string>
+    <string name="change_language">भाषा बदलें</string>
+    <string name="address">पता</string>
+    <string name="last_updated_time">अंतिम अद्यतन समय</string>
+    <string name="attraction_list_title">ताइपे टूर</string>
+</resources>
